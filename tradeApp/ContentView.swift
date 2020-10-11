@@ -9,6 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State var NewCompany:String = ""
+    @State var TestCompany:String = ""
+    
+    func addCompany(adcp: String) {
+        self.TestCompany = adcp
+    }
     
     var body: some View {
         VStack {
@@ -18,10 +23,13 @@ struct ContentView: View {
                 .foregroundColor(Color.blue)
             HStack {
                 TextField("会社名", text: $NewCompany).textFieldStyle(RoundedBorderTextFieldStyle())
-                Button(action: {} ) {
+                Button(action: {
+                    addCompany(adcp: self.NewCompany)
+                } ) {
                     Text("検索")
                 }
             }
+            Text(self.TestCompany)
         }
     }
 }
