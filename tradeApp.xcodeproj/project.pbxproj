@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		7E4CB8402531F963007537D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4CB83F2531F963007537D3 /* Assets.xcassets */; };
 		7E4CB8432531F963007537D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4CB8422531F963007537D3 /* Preview Assets.xcassets */; };
 		7E4CB84C2534A22D007537D3 /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4CB84B2534A22D007537D3 /* CompanyList.swift */; };
+		7E9997E7253DC06A0057E070 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9997E6253DC06A0057E070 /* URLImage */; };
+		7E9997EA253DC3BD0057E070 /* TradeJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9997E9253DC3BD0057E070 /* TradeJsonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		7E4CB8422531F963007537D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E4CB8442531F963007537D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4CB84B2534A22D007537D3 /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
+		7E9997E9253DC3BD0057E070 /* TradeJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeJsonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9997E7253DC06A0057E070 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				7E4CB83B2531F960007537D3 /* tradeAppApp.swift */,
 				7E4CB83D2531F960007537D3 /* ContentView.swift */,
 				7E4CB84B2534A22D007537D3 /* CompanyList.swift */,
+				7E9997E9253DC3BD0057E070 /* TradeJsonModel.swift */,
 				7E4CB83F2531F963007537D3 /* Assets.xcassets */,
 				7E4CB8442531F963007537D3 /* Info.plist */,
 				7E4CB8412531F963007537D3 /* Preview Content */,
@@ -88,6 +93,9 @@
 			dependencies = (
 			);
 			name = tradeApp;
+			packageProductDependencies = (
+				7E9997E6253DC06A0057E070 /* URLImage */,
+			);
 			productName = tradeApp;
 			productReference = 7E4CB8382531F960007537D3 /* tradeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 7E4CB82F2531F960007537D3;
+			packageReferences = (
+				7E9997E5253DC06A0057E070 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 7E4CB8392531F960007537D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +154,7 @@
 			files = (
 				7E4CB84C2534A22D007537D3 /* CompanyList.swift in Sources */,
 				7E4CB83E2531F960007537D3 /* ContentView.swift in Sources */,
+				7E9997EA253DC3BD0057E070 /* TradeJsonModel.swift in Sources */,
 				7E4CB83C2531F960007537D3 /* tradeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E9997E5253DC06A0057E070 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E9997E6253DC06A0057E070 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E9997E5253DC06A0057E070 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E4CB8302531F960007537D3 /* Project object */;
 }
