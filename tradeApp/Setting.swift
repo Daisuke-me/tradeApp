@@ -5,4 +5,6 @@
 //  Created by daisuke on 2020/10/30.
 //
 
-import Foundation
+struct Settings: Codable {
+    var financialApiKey: String
+}
